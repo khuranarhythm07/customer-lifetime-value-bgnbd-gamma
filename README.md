@@ -47,42 +47,6 @@ CLV is calculated as:
 CLV = Expected Purchases × Expected Transaction Value
 
 
----
-
-# Python Implementation
-
-Example implementation using the **lifetimes** library:
-
-```python
-from lifetimes import BetaGeoFitter
-from lifetimes import GammaGammaFitter
-import pandas as pd
-
-data = pd.read_csv("bgnbd_gamma_model.csv")
-
-# Fit BG/NBD model
-bgf = BetaGeoFitter()
-bgf.fit(data['frequency'], data['recency'], data['T'])
-
-predicted_purchases = bgf.predict(
-    12,
-    data['frequency'],
-    data['recency'],
-    data['T']
-)
-
-# Fit Gamma-Gamma model
-ggf = GammaGammaFitter()
-ggf.fit(data['frequency'], data['monetary_value'])
-
-predicted_monetary = ggf.conditional_expected_average_profit(
-    data['frequency'],
-    data['monetary_value']
-)
-
-# Compute CLV
-data["CLV"] = predicted_purchases * predicted_monetary
-
 # Example Outputs
 The notebook includes several visualizations, including:
 
