@@ -56,7 +56,7 @@ The notebook includes several visualizations, including:
 These outputs help identify high-value customers and support targeted retention strategies.
 
 # Applications
-1.) CLV modeling is widely used in industries with repeat transactions:
+CLV modeling is widely used in industries with repeat transactions:
  - E-commerce
  - Retail companies use CLV to prioritize high-value customers and optimize marketing spending.
  - Digital Platforms
@@ -68,5 +68,3 @@ Fader, Hardie, and Lee (2005)
 
 # Author
 Rhythm Khurana
-
-CLV is calculated as:
