@@ -83,36 +83,26 @@ predicted_monetary = ggf.conditional_expected_average_profit(
 # Compute CLV
 data["CLV"] = predicted_purchases * predicted_monetary
 
-Example Outputs
-
+# Example Outputs
 The notebook includes several visualizations, including:
 
-Frequency–Recency Matrix showing predicted purchasing behavior
-
-CLV Distribution illustrating variation in predicted customer value
-
-Top Customers by Predicted CLV
-
+1.) Frequency–Recency Matrix showing predicted purchasing behavior
+2.) CLV Distribution illustrating variation in predicted customer value
+3.) Top Customers by Predicted CLV
 These outputs help identify high-value customers and support targeted retention strategies.
 
-Applications
+# Applications
+1.) CLV modeling is widely used in industries with repeat transactions:
+ - E-commerce
+ - Retail companies use CLV to prioritize high-value customers and optimize marketing spending.
+ - Digital Platforms
+ - Media and technology companies estimate long-term engagement value for users.
 
-CLV modeling is widely used in industries with repeat transactions:
-
-E-commerce
-
-Retail companies use CLV to prioritize high-value customers and optimize marketing spending.
-
-Digital Platforms
-
-Media and technology companies estimate long-term engagement value for users.
-
-Reference
-
+# Reference
 Fader, Hardie, and Lee (2005)
 "Counting Your Customers the Easy Way: An Alternative to the Pareto/NBD Model"
 
-Author
+# Author
 Rhythm Khurana
 
 CLV is calculated as:
